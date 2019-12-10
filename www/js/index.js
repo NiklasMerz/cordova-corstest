@@ -50,3 +50,7 @@ function test() {
     fetch(url + ((/\?/).test(url) ? "&" : "?") + (new Date()).getTime(), { credentials: "include", method: "GET", mode: "cors", cache: 'no-cache' })
         .then((res) => console.log("Check network tab for cookies in requests", res));
 }
+
+function switchHostname() {
+    window.Ionic.WebView.setOrigin("niklas.merz.dev", "https", ["api"]);
+}

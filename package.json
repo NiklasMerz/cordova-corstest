@@ -14,12 +14,14 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
-    "cordova-plugin-ionic-webview": "https://github.com/gedysintraware/cordova-plugin-ionic-webview#android-origin"
+    "cordova-plugin-ionic-webview": "file:../cordova-plugin-ionic-webview"
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      }
     },
     "platforms": [
       "android"
